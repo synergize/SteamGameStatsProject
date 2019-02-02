@@ -6,3 +6,18 @@
 
 <h2>@Model.Name</h2>
 
+<body class="htmlNoPages">
+<div>
+    <input type="text" id="txtSteamID" value="Please Enter Steam 64 Bit Steam ID" width="300">
+    <input id="btnSubmit" type="button" value="Submit" onclick="location.href='@Url.Action("Stats", "Games")'" />
+</div>
+<div>
+    <label id="label_1">Stone Collected</label>
+    <label id="txtStone">@Model.StoneAmount</label>
+</div>
+<div>
+    <label id="label1">Wood Collected</label>
+    <label id="txtWood">@Model.WoodAmount</label>
+</div>
+
+</body>

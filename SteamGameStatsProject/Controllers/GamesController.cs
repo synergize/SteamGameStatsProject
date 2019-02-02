@@ -12,7 +12,8 @@ namespace SteamGameStatsProject.Controllers
         // GET: Games/Stats
         public ActionResult Stats()
         {
-            var stats = new Stats() {Name = "Rust"};
+            var stats = new Stats() {Name = "Testing Change", StoneAmount = "11", WoodAmount = "12"};
+            
             return View(stats);
         }
     }
